@@ -1,0 +1,13 @@
+ %%
+file = 'Plaque1.mat' ;
+Data = load(file) ;
+
+ %%
+file = 'Plaque2.mat' ;
+Data = load(file) ;
+ %%
+file = 'Plaque3.mat' ;
+Data = load(file) ;
+ %%
+file = 'Plaque4.mat' ;
+Data = load(file) ;
