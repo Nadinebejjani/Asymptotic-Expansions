@@ -23,7 +23,7 @@ NPHI = length(PHI) ;
 h = sum(e) ;
 p=1;
        
-Nodes = [] ; % points de -1/2 à 1/2
+Nodes = [] ; % points de -1/2 Ã  1/2
         Nodes(1) = -h/2 ;
         for k = 1:NCouches
                 Nodes = [Nodes ; Nodes(end)+e(k)] ;  %%%position des points
