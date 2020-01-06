@@ -33,7 +33,7 @@ nF = 100 ;
 scaleF = 'lin' ; 
 phi0 =0;% % angle de propagation 
 nPhi =1; %  Nombre de points sur la diagramme polaire
-gammaMax = .1 ; % Critère sur l'amortissement pour le tri
+gammaMax = .1 ; % CritÃ¨re sur l'amortissement pour le tri
         
     % Premiers calculs
         switch scaleF
@@ -49,7 +49,7 @@ gammaMax = .1 ; % Critère sur l'amortissement pour le tri
         out = SortBranches3(out) ; % tri des branches
         out = TriPropagativ3(out,gammaMax) ; % tri des nb donde propagtifs
     
-    % Résultats
+    % RÃ©sultats
         K = out.k ;  %tenseur dordre trois k(f,phi,mode) = K[f,phi,mode]
         U = out.U ;
     % Calculs
@@ -79,7 +79,7 @@ gammaMax = .1 ; % Critère sur l'amortissement pour le tri
         C_Shear_LK = repmat(sqrt(rei.Matrices.A(3,3)/rei.Matrices.M),size(F)) ;
         C_Comp_LK = repmat(sqrt(rei.Matrices.A(1,1)/rei.Matrices.M),size(F)) ;
   %% Facteur de normalisation
-res  = calculs_elasticite(Plaque,PHI);
+res  = calculus(Plaque,PHI);
 Nodes=res.Nodes; 
 rhobar=res.rhobar %moyenne de rho
 Gbar=res.Gbar %moyenne de G_LN
