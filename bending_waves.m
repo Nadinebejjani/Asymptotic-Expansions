@@ -40,7 +40,7 @@ close all
         scaleF = 'lin' ; 
         phi0 =0;%45*pi/180 22*pi/180; % angle de propagation (si nPhi = 1)
         nPhi =1; %1  Nombre de points sur la diagramme polaire
-        gammaMax = .1 ; % Critère sur l'amortissement pour le tri
+        gammaMax = .1 ; % CritÃ¨re sur l'amortissement pour le tri
         
     % Premiers calculs
         switch scaleF
@@ -56,7 +56,7 @@ close all
         out = SortBranches3(out) ; % tri des branches
         out = TriPropagativ3(out,gammaMax) ; % tri des nb donde propagtifs
     
-    % Résultats
+    % RÃ©sultats
         K = out.k ;  %tenseur dordre trois k(f,phi,mode) = K[f,phi,mode]
         U = out.U ;
     % Calculs
@@ -86,7 +86,7 @@ close all
         KK=real(squeeze(K(:,iPhi,ondes)));
         strK = real(squeeze(starK(:,iPhi,ondes)));
 %% Facteur de normalisation
-res  = calculs_elasticite(Plaque,PHI);
+res  = calculus(Plaque,PHI);
 Nodes=res.Nodes; 
 rhobar=res.rhobar %moyenne de rho
 Gbar=res.Gbar %moyenne de G_LN
