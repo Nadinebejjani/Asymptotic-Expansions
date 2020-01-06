@@ -33,10 +33,10 @@ close all
          phi0 =0 ; %45*pi/180 ; % angle de propagation (si nPhi = 1)
          nPhi = 1 ; % Nombre de points sur la diagramme polaire        
         PHI = phi0+(0:nPhi-1)*2*pi/nPhi ;
-        %% Methodes Des Elements Finis
-%% CALCUL DES NOMBRES D'ONDE
-
-      
+        
+        
+%% Methodes Des Elements Finis
+%% CALCUL DES NOMBRES D'ONDE 
         nF =100 ;
         scaleF = 'lin' ; 
         phi0 =0;%45*pi/180 22*pi/180; % angle de propagation (si nPhi = 1)
@@ -88,7 +88,7 @@ close all
         strK = real(squeeze(starK(:,iPhi,ondes)));
         
         %% Facteur de normalisation
-res  = calculs_elasticite(Plaque,PHI);
+res  = calculus(Plaque,PHI);
 Nodes=res.Nodes; 
 rhobar=res.rhobar %moyenne de rho
 Gbar=res.Gbar %moyenne de G_LN
